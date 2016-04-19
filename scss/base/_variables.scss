@@ -1,0 +1,46 @@
+// Typography
+$base-font-family: 'freight-text-pro', serif;
+$heading-font-family: $base-font-family;
+$alt-font-family: 'brim-narrow-combined-2', 'helvetica', 'arial', sans-serif;
+
+// Font Sizes
+$base-font-size: 16px;
+
+// Line height
+$base-line-height: 1.5;
+$heading-line-height: 1.2;
+
+// Other Sizes
+$base-border-radius: 4px;
+$base-spacing: $base-line-height * 1em;
+$small-spacing: $base-spacing / 2;
+$base-z-index: 0;
+
+// Colors
+$primary-color: #607890;
+$primary-tint-1: #A9C1D9;
+$secondary-color: #96B0B1;
+
+$mid-neutral-color: #A8A8A3;
+$light-neutral-color: #F8F8F1;
+$lightest-neutral-color: #E8E8E8;
+
+// Font Colors
+$base-font-color: $light-neutral-color;
+$action-color: $light-neutral-color;
+
+// Border
+$base-border-color: $primary-color;
+$base-border: 1px solid $base-border-color;
+
+// Background Colors
+$base-background-color: $primary-color;
+$secondary-background-color: $light-neutral-color;
+
+// Forms
+$form-box-shadow: inset 0 1px 3px rgba(#000, 0.06);
+$form-box-shadow-focus: $form-box-shadow, 0 0 5px adjust-color($action-color, $lightness: -5%, $alpha: -0.3);
+
+// Animations
+$base-duration: 150ms;
+$base-timing: ease;

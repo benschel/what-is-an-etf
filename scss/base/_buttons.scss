@@ -1,0 +1,46 @@
+$all-buttons: append($all-buttons, '.button');
+#{$all-buttons} {
+  appearance: none;
+  border: 1px solid $secondary-color;
+  border-radius: $base-border-radius;
+  color: $secondary-color;
+  cursor: pointer;
+  display: inline-block;
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  -webkit-font-smoothing: antialiased;
+  font-weight: 600;
+  line-height: 1;
+  padding: 10px 20px;
+  text-decoration: none;
+  transition: background-color $base-duration $base-timing;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+
+  &:hover,
+  &:focus {
+    background-color: $secondary-color;
+    color: $light-neutral-color;
+  }
+
+  &.secondary-button {
+    border: 1px solid $light-neutral-color;
+    color: $light-neutral-color;
+
+    &:focus,
+    &:hover {
+      background: $light-neutral-color;
+      color: $primary-color;
+    }
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+
+    &:hover {
+      background-color: $action-color;
+    }
+  }
+}

@@ -1,0 +1,36 @@
+//
+// Collection Animation
+//
+$stock-markers: (
+    1 : (-75, 50),
+    2 : (175, 50),
+    3 : (50, -75),
+    4 : (50, 175),
+    5 : (-50, -50),
+    6 : (150, -50),
+    7 : (150, 150),
+    8 : (-50, 150),
+);
+
+.animate .stock-markers {
+    @each $index, $list in $stock-markers {
+        $top: nth($list, 1);
+        $left: nth($list, 2);
+
+        @include keyframes(expand-#{$index}) {
+            100% {
+                top: $top * 1px;
+                left: $left * 1px;
+                opacity: 1;
+            }
+        }
+
+        li:nth-of-type(#{$index}) {
+            @include animation(expand-#{$index} 1.2s $ease-in-quart forwards);
+            
+            @if ($index > 4) {
+                @include animation-delay(0.1s);
+            }
+        }
+    }
+}
