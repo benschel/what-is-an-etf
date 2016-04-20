@@ -423,6 +423,68 @@ picture {
         top: 0;
         left: 50px; }
 
+.section-4 .illustration-container {
+  padding-top: 50px; }
+.section-4 .header {
+  float: left;
+  display: block;
+  margin-right: 4.82916%;
+  width: 65.05695%;
+  margin-left: 17.47153%;
+  text-align: center;
+  padding-bottom: 10px;
+  margin-bottom: 25px;
+  border-bottom: 1px solid #A9C1D9; }
+  .section-4 .header:last-child {
+    margin-right: 0; }
+  .section-4 .header h3,
+  .section-4 .header h4 {
+    font-style: normal;
+    font-weight: 400;
+    margin-bottom: 10px; }
+  .section-4 .header h6 {
+    font-size: 0.875em;
+    color: #A9C1D9; }
+.section-4 .comparison {
+  float: left;
+  display: block;
+  margin-right: 4.82916%;
+  width: 65.05695%;
+  margin-left: 17.47153%; }
+  .section-4 .comparison:last-child {
+    margin-right: 0; }
+  .section-4 .comparison::after {
+    clear: both;
+    content: "";
+    display: table; }
+  .section-4 .comparison li {
+    float: left;
+    display: block;
+    margin-right: 7.42297%;
+    width: 46.28851%; }
+    .section-4 .comparison li:last-child {
+      margin-right: 0; }
+    .section-4 .comparison li:nth-child(2n) {
+      margin-right: 0; }
+    .section-4 .comparison li:nth-child(2n+1) {
+      clear: left; }
+  .section-4 .comparison .cost,
+  .section-4 .comparison .ratio {
+    font-style: normal;
+    font-weight: 400; }
+  .section-4 .comparison .cost {
+    font-size: 2.25em; }
+  .section-4 .comparison .ratio {
+    padding-top: 5px;
+    border-top: 1px solid #A9C1D9;
+    margin-bottom: 0; }
+  .section-4 .comparison .label {
+    font-weight: 400;
+    font-size: 0.875em; }
+.section-4 .small {
+  font-size: 14px;
+  color: #A9C1D9; }
+
 @-webkit-keyframes expand-1 {
   100% {
     top: -75px;

@@ -4,6 +4,8 @@ $(document).ready(function() {
             init: function() {
                 this.viewportHeight = $(window).height();
 
+                this.costHasAnimated = false;
+
                 $('.section').css('height', this.viewportHeight);
 
                 this.setUpSmoothScroll();
@@ -40,22 +42,34 @@ $(document).ready(function() {
 
                 $(window).on('scroll', function() {
                     var offset = $(document).scrollTop();
+                    var vHeight = self.viewportHeight;
 
-                    switch(offset) {
-                        case self.viewportHeight:
-                            self.animateSection('.section-2');
-                            break;
-                        case (self.viewportHeight * 2):
-                            self.animateSection('.section-3');
-                            break;
-                        default:
-                            return false;
-                    }
+                    if (offset >= vHeight && offset < (vHeight * 2)) {
+                        self.animateSection('.section-2');
+                    } else if (offset >= (vHeight * 2) && offset < (vHeight * 3)) {
+                        self.animateSection('.section-3');
+                    } else if (offset >= (vHeight * 3)) {
+                        self.numericAnimation();
+                    };
                 });
             },
 
             animateSection: function(section) {
-                $(section).addClass('animate');
+                if (!$(section).hasClass('animate')) {
+                    $(section).addClass('animate');
+                }
+            },
+
+            numericAnimation: function() {
+                if (!this.costHasAnimated) {
+                    var cheaperFee = new CountUp('cheaper-fee', 0, 700, 0, 2.5);
+                    var expensiveFee = new CountUp('expensive-fee', 0, 2000, 0, 4.5);
+                    
+                    cheaperFee.start();
+                    expensiveFee.start();
+
+                    this.costHasAnimated = true;
+                }
             }
         };
 
