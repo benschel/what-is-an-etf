@@ -179,7 +179,7 @@
     .illustration-container {
         padding-top: 50px;
     }
-    
+
     .header {
         @include span-columns(4 of 6);
         @include shift(1);
@@ -237,5 +237,25 @@
     .small {
         font-size: 14px;
         color: $primary-tint-1;
+    }
+}
+
+.footer {
+    padding: 25px 0;
+    background: darken($primary-color, 5%);
+    color: $primary-tint-1;
+    font-size: 0.875em;
+    text-align: center;
+
+    .disclaimer {
+        text-transform: uppercase;
+
+        strong {
+            text-decoration: underline;
+        }
+    }
+
+    p:last-child {
+        margin-bottom: 0;
     }
 }

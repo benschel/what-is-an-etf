@@ -485,6 +485,19 @@ picture {
   font-size: 14px;
   color: #A9C1D9; }
 
+.footer {
+  padding: 25px 0;
+  background: #566b81;
+  color: #A9C1D9;
+  font-size: 0.875em;
+  text-align: center; }
+  .footer .disclaimer {
+    text-transform: uppercase; }
+    .footer .disclaimer strong {
+      text-decoration: underline; }
+  .footer p:last-child {
+    margin-bottom: 0; }
+
 @-webkit-keyframes expand-1 {
   100% {
     top: -75px;
