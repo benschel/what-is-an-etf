@@ -329,10 +329,10 @@ picture {
     height: 150px;
     position: relative;
     z-index: 5;
-    background-image: url("/images/square-etf-icon.png"); }
+    background-image: url("../images/square-etf-icon.png"); }
     @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
       .section-2 .illustration .etf-icon {
-        background-image: url("/images/square-etf-icon@2x.png");
+        background-image: url("../images/square-etf-icon@2x.png");
         background-size: 150px 150px; } }
   .section-2 .illustration .stock-markers {
     width: 150px;
@@ -370,7 +370,7 @@ picture {
     top: 30px;
     left: 50%;
     margin-left: -15px;
-    background-image: url("/images/bell-icon.png");
+    background-image: url("../images/bell-icon.png");
     width: 30px;
     height: 30px;
     -webkit-transform: scale(0, 0);
@@ -380,7 +380,7 @@ picture {
     transform: scale(0, 0); }
     @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
       .section-3 .illustration .icon-bell {
-        background-image: url("/images/bell-icon@2x.png");
+        background-image: url("../images/bell-icon@2x.png");
         background-size: 30px 30px; } }
   .section-3 .illustration .bank {
     display: block;
@@ -390,10 +390,10 @@ picture {
     margin: -48px 0 0 -47px;
     width: 94px;
     height: 97px;
-    background-image: url("/images/bank-icon.png"); }
+    background-image: url("../images/bank-icon.png"); }
     @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
       .section-3 .illustration .bank {
-        background-image: url("/images/bank-icon@2x.png");
+        background-image: url("../images/bank-icon@2x.png");
         background-size: 94px 97px; } }
   .section-3 .illustration .buy-sell {
     position: absolute;

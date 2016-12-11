@@ -77,7 +77,7 @@
             height: 150px;
             position: relative;
             z-index: 5;
-            @include retina-image('/images/square-etf-icon', 150px 150px, 'png', null, '@2x');
+            @include retina-image('../images/square-etf-icon', 150px 150px, 'png', null, '@2x');
         }
 
         .stock-markers {
@@ -125,7 +125,7 @@
             top: 30px;
             left: 50%;
             margin-left: -15px;
-            @include retina-image('/images/bell-icon', 30px 30px, 'png', null, '@2x');
+            @include retina-image('../images/bell-icon', 30px 30px, 'png', null, '@2x');
             width: 30px;
             height: 30px;
             @include transform(scale(0, 0));
@@ -139,7 +139,7 @@
             margin: -48px 0 0 -47px;
             width: 94px;
             height: 97px;
-            @include retina-image('/images/bank-icon', 94px 97px, 'png', null, '@2x');
+            @include retina-image('../images/bank-icon', 94px 97px, 'png', null, '@2x');
         }
 
         .buy-sell {
