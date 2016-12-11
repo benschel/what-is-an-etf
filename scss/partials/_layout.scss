@@ -195,6 +195,10 @@
             margin-bottom: 10px;
         }
 
+        h4 {
+            margin-bottom: 0;
+        }
+
         h6 {
             font-size: 0.875em;
             color: $primary-tint-1;
@@ -257,5 +261,21 @@
 
     p:last-child {
         margin-bottom: 0;
+    }
+
+    .credits-header {
+        color: $primary-tint-1;
+        font-size: 12px;
+        margin-bottom: 0;
+    }
+
+    .credits a {
+        color: $primary-tint-1;
+        font-size: 12px;
+        font-style: italic;
+
+        &:hover {
+            color: $lightest-neutral-color;
+        }
     }
 }

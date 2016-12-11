@@ -62,8 +62,8 @@ $(document).ready(function() {
 
             numericAnimation: function() {
                 if (!this.costHasAnimated) {
-                    var cheaperFee = new CountUp('cheaper-fee', 0, 700, 0, 2.5);
-                    var expensiveFee = new CountUp('expensive-fee', 0, 2000, 0, 4.5);
+                    var cheaperFee = new CountUp('cheaper-fee', 0, 117, 0, 2.5);
+                    var expensiveFee = new CountUp('expensive-fee', 0, 3106, 0, 4.5);
                     
                     cheaperFee.start();
                     expensiveFee.start();

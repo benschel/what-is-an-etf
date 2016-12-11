@@ -442,6 +442,8 @@ picture {
     font-style: normal;
     font-weight: 400;
     margin-bottom: 10px; }
+  .section-4 .header h4 {
+    margin-bottom: 0; }
   .section-4 .header h6 {
     font-size: 0.875em;
     color: #A9C1D9; }
@@ -497,6 +499,16 @@ picture {
       text-decoration: underline; }
   .footer p:last-child {
     margin-bottom: 0; }
+  .footer .credits-header {
+    color: #A9C1D9;
+    font-size: 12px;
+    margin-bottom: 0; }
+  .footer .credits a {
+    color: #A9C1D9;
+    font-size: 12px;
+    font-style: italic; }
+    .footer .credits a:hover {
+      color: #E8E8E8; }
 
 @-webkit-keyframes expand-1 {
   100% {
